@@ -1,13 +1,14 @@
 pipeline {
     agent any
     tools {
-        maven 'MAVEN3' // Use Maven installation named 'Maven'. Adjust if your configuration is different.
+        maven 'MAVEN3' // Use Maven installation named 'MAVEN3'. Adjust if your configuration is different.
     }
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
     }
 }
+
