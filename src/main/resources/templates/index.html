@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Add page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to COMP367</title>
 </head>
 <body>
-	<label for="deptNo">Welcome to Comp367</label>
-	
-	
+     <div id="greeting">
+        <span th:text="${greeting}"></span>
+    </div>
 </body>
 </html>
